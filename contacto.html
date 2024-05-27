@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMAVITA SL</title>
+    <!-- Favicon de la página web -->
+    <link rel="icon" type="image/x-icon" href="/image/isotipo.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/plantilla_pagina.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+
+<!------------ ENCABEZADO, barra superior del menú ------------>
+
+<header>
+    <!--Logotipo-->
+    <a href="index.html">
+        <img class="logotipo" src="image/logotipo.png" alt="logotipo de la empresa ANIMAVITA SL">
+    </a>
+
+    <!--Botón del menú desplegable-->
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <!--Elementos de la barra del menú-->
+    <ul class="barra-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="sobremi.html">SOBRE NOSOTROS</a></li>
+        <li class="icono-login">
+            <!--En el icono de login, salte un globo indicando en palabras la referencia del icono "login"-->
+            <a href="#" class="tooltip">
+                <img class="login" src="./image/login.png" alt="Icono para iniciar sesión en el portal del cliente Animavita SL">
+                <span class="login-tooltip">Login</span>
+            </a>
+        </li>
+    </ul>
+</header>
+
+
+<!----------- CONTENIDO DE LA PÁGINA ------------->
+<div class="barra-azul">
+</div>
+
+<section class="contenido-pagina">
+
+    <!-- Formulario -->
+    <div class="contenedor-form">
+        <div class="subtitulos">
+            <h4>Forma parte de nuestra comunidad</h4>
+        </div>
+        <div>
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text"  id="apellido" name="apellido" required>
+                </div>
+                <div>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div>
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="archivo">CV:</label>
+                    <input type="file" id="archivo" name="archivo" required>
+                </div>
+                <div>
+                    <button type="submit" class="boton-enviar">Enviar</button>
+                    <button type="reset" class="boton-limpiar">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section class="contenido-pagina-contacto">
+
+        <!-- Información de contacto -->
+        <div class="contacto">
+            <div class="subtitulos">
+                <h5>CONTACTO</h5>
+            </div>
+            <div class="contenedor-contacto">
+                <p>917 456 123</p>
+                <p>atencion.cliente@animavita.com</p>
+            </div>
+        </div>
+
+        <!-- Información donde encontrarnos -->
+        <div class="direccion">
+            <div class="subtitulos">
+                <h5>DONDE ENCONTRARNOS</h5>
+            </div>
+            <div class="contenedor-direccion">
+                <p>Avda. Alcorta 13, San Fernando de Henares 28830, Madrid</p>
+            </div>
+        </div>
+
+    </section>
+
+</section>
+<!---------------- PIE DE PÁGINA ---------------->
+
+<footer class="footer">
+    <div class="contenedor-footer">
+        <div class="col">
+            <h4>Redes Sociales</h4>
+            <div class="social">
+                <a href="#">
+                    <img src="./image/icono-facebook.svg" alt="icono de Facebook" class="icono-red-social">
+                </a>
+                <a href="#">
+                    <img src="./image/icono-twitter.svg" alt="icono de Twitter" class="icono-red-social">
+                </a>
+                <a href="#">
+                    <img src="./image/icono-instagram.svg" alt="icono de Instagram" class="icono-red-social">
+                </a>
+                <a href="#">
+                    <img src="./image/icono-youtube.svg" alt="icono de YouTube" class="icono-red-social">
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Dirección</h4>
+            <p>Avda. Alcorta 13, San Fernando de Henares 28830</p>
+            <p>Madrid, España</p>
+        </div>
+        <div class="col">
+            <h4>Contacto</h4>
+            <p>917 456 123</p>
+            <p>atencion.cliente@animavita.com</p>
+        </div>
+    </div>
+    <div class="copyright">
+        © 2024 ANIMAVITA SL. Todos los derechos reservados.
+    </div>
+</footer>
+
+<!--JAVASCRIPT-->
+<script src="./js/index.js"></script>
+
+</body>
+</html>
