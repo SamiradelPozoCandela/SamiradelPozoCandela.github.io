@@ -1,0 +1,112 @@
+header{
+    margin-top:-1%;
+}
+
+/*------------- Nuestro equipo ---------*/
+.subtitulos{
+    padding-top: 8%;
+    text-align: center;
+    color:  #1d6fc5;
+}
+
+.contenedor-equipo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.col-content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 12%;
+}
+
+.col-content img {
+    object-fit: cover;
+    width: 15vw;
+    border-radius: 12px;
+    transition: all .3s cubic-bezier(.445,05,.55,.95);
+    will-change: filter;
+    height: 35vh;
+}
+
+.col-content img:hover{
+    transform:scale(1.04);
+    box-shadow: 5px 30px 40px rgb(85 85 85/20%);
+    backdrop-filter: blur(10px);
+}
+
+.col-content .cargo {
+    position: absolute;
+    margin-top: 100%;
+    color:black;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.col-content .nombre{
+    position: absolute;
+    margin-top: 120%;
+    color:black;
+    font-size: 0.7em;
+}
+
+@media (max-width: 600px){
+    .contenedor-equipo{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .contenedor-equipo img{
+        width: 25vw;
+    }
+
+    .col-content .cargo {
+        margin-top: 65%;
+        font-size: 0.75em;
+    }
+
+    .col-content .nombre{
+        margin-top: 80%;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 450px){
+    .contenedor-equipo{
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-equipo img{
+        width: 35vw;
+        height: 45vh;
+    }
+
+    .col-content .cargo {
+        margin-top: 70%;
+        color:black;
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+
+    .col-content .nombre{
+        position: absolute;
+        margin-top: 85%;
+        color:black;
+        font-size: 0.7em;
+    }
+}
+
+/*--------- Quienes somos y propuesta de valor -----------*/
+.contenedor-propuesta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}

@@ -1,0 +1,101 @@
+header{
+    margin-top: -1%;
+}
+
+.contenido-pagina{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenido-pagina-contacto{
+    display: flex;
+    flex-direction: column;
+    padding-top: 9%;
+    padding-left: 10%;
+}
+
+/*----- barra azul ------*/
+.barra-azul{
+    width: 100vw;
+    background-color: #1d6fc5;
+}
+
+/*---- formulario -----*/
+.contenedor-form {
+    padding-top: 9%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+}
+
+.subtitulos{
+    margin-bottom: 2%;
+    color:  #1d6fc5;
+}
+
+label {
+    display: flex;
+    margin-bottom: 1.5%;
+    font-size: 0.7rem;
+}
+
+input{
+    margin-bottom: 3%;
+    width: 40vw;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 0.7em;
+}
+
+button {
+    margin-top: 2%;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+.boton-enviar{
+    background-color: #1d6fc5;
+    color: white;
+}
+
+.boton-enviar:hover{
+    background-color: #098cf1;
+    border: #098cf1;
+}
+
+.boton-limpiar {
+    background-color: #ddd;
+    color: #333;
+}
+
+/*----- Contacto -------*/
+
+.contacto{
+    margin-bottom: 18%;
+}
+
+.contenedor-contacto, .contenedor-direccion{
+    font-size: 0.7em;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 600px){
+    .contenido-pagina{
+        flex-direction: column;
+    }
+
+    .contenido-pagina-contacto{
+        padding-left: 3%;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+
+    .contacto{
+        margin-bottom: 10%;
+    }
+}

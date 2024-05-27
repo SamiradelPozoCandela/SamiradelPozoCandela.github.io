@@ -1,0 +1,231 @@
+/*ESTILOS EN COMÚN DE LAS 3 PÁGINAS*/
+
+/*--------------Estilos generales------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: white;
+    color: #221314;
+}
+
+/*-------------- Cabecera del menú ------------*/
+header{
+    position:fixed;
+    margin-top:-6%;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 4px 18%;
+    transition: ease .40s;
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.logotipo{
+    height: 12vh;
+    vertical-align: middle;
+}
+
+.barra-menu{
+    display: flex;
+}
+.barra-menu  a{
+    color: #221314;
+    font-size: 0.6em;
+    font-weight: 500;
+    padding: 5px 18px;
+    border-radius: 4px;
+    transition: ease .40s;
+
+}
+.barra-menu a:hover{
+    background-color: #91d0f3;
+    color: black;
+    box-shadow: 5px 30px 40px rgb(85 85 85/20%);
+    border-radius: 4px;
+    transform:scaleX(5px);
+
+}
+#menu-icon{
+    color: black;
+    font-size: 25px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.login{
+    width:2.5vw;
+    height: 6vh;
+}
+
+.icono-login a:hover{
+    background-color: rgb(255 255 255 / 0.3);
+}
+
+.login-tooltip {
+    visibility: hidden;
+    width: 5vw;
+    height: 6vh;
+    background-color: black;
+    font-size: 0.85em;
+    line-height: 6vh;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    margin-bottom: 6vh;
+    margin-left: -3.7%;
+}
+
+.login-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .login-tooltip {
+    visibility: visible;
+}
+
+/*-------- Footer ----------*/
+
+.footer {
+    background-color: #91d0f3;
+    color: black;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.footer .contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .col {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer .col h4 {
+    margin-bottom: 3px;
+}
+
+.footer .icono-red-social a {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+    font-size: xx-small;
+}
+
+/*-------------- Vista responsive del menú ------------*/
+
+@media (max-width:655px){
+    .imagen-principal{
+        height: 50vh;
+        margin-top:7%;
+    }
+    header{
+        margin-top:-7%;
+    }
+    .logotipo{
+        height: 9.5vh;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .barra-menu{
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;
+        background: #91d0f3;
+        display: flex;
+        flex-direction: column;
+        padding: 150px 30px;
+        transition: 0.5s all ;
+    }
+    .barra-menu a{
+        display: block;
+        margin: 1.2rem  0;
+    }
+    .barra-menu a:hover{
+        color: #221314;
+        padding: 10px 22px;
+        background-color: white;
+    }
+    .open {
+        right: -1%;
+    }
+    .login{
+        width:4vw;
+        height: 5vh;
+    }
+    .tooltip:hover .login-tooltip {
+        visibility: hidden;
+    }
+
+}
+
+@media (max-width:350px){
+    .logotipo{
+        height: 9vh;
+    }
+    #menu-icon{
+        font-size: 30px;
+    }
+    .barra-menu  a {
+        font-size: 0.8em;
+    }
+    .login{
+        width:5.5vw;
+        height: 3vh;
+    }
+}
